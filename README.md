@@ -9,3 +9,6 @@ The difficulty escalates in the amount of numbers in the sequence, the speed of 
 Expert players will start to see colors in later rounds.
 
 Basic prototype to begin with.
+
+21 Oct 2025
+Got basic UI and random numbers working.
