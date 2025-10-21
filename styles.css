@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: wheat;
+}
+
+#title {
+  position: absolute;
+  top: 0;
+}
+
+#container {
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#score {
+  border: 2px solid green;
+  height: 40px;
+  width: 200px;
+  margin: 8px;
+  /* position: absolute;
+  top: 0;
+  margin-top: 30; */
+}
+
+#computer-display {
+  border: 2px solid red;
+  height: 200px;
+  width: 400px;
+  margin: 8px;
+}
+
+#player-display {
+  border: 2px solid yellow;
+  height: 200px;
+  width: 400px;
+  margin: 8px;
+}
