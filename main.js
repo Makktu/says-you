@@ -30,13 +30,21 @@ function keyDownHandler(e) {
   if (keyPressed === 'a') {
     console.log(getRandomInt(1, 10));
   }
+  // switch (keyPressed) {
+  //   case 'q':
+  //     window.removeEventListener('keydown', keyDownHandler);
+  //     break;
+  //   case 'a':
+  //     console.log(getRandomInt(1, 10));
+  //     break;
+  //   default:
+  //     break;
+  // }
 }
 
 function showMessage(message = 'nothing') {
   computerDisplay.innerHTML = `<p>${message}</p>`;
 }
-
-playerTurn();
 
 function getRandomInt(min = 1, max = 100) {
   min = Math.ceil(min);
@@ -44,14 +52,9 @@ function getRandomInt(min = 1, max = 100) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function showNumbers(digit1, digit2, digit3) {
-  showMessage(digit1);
-}
-
 async function displayNumbers(numbers = [], delayMs = 1000) {
   for (let i = 0; i < numbers.length + 1; i++) {
-    showMessage(' '); // need to resolve what happens when same numbers succeed one another
-
+    // need to resolve what happens when same numbers succeed one another
     await new Promise((resolve) => setTimeout(resolve, delayMs));
     if (numbers[i]) {
       showMessage(numbers[i]);
@@ -60,3 +63,5 @@ async function displayNumbers(numbers = [], delayMs = 1000) {
     }
   }
 }
+
+playerTurn();
